@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONT AWESOME CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/productpage.css" />
+
+    <title>Theo Official Homepage</title>
+  </head>
+  <body>
+    <!-- BUTTON MENU -->
+    <div class="menu-btn">
+      <i class="fas fa-bars fa-2x"></i>
+    </div>
+    <!-- PAGE CONTAINER -->
+    <div class="container">
+      <!-- NAV BAR -->
+      <nav class="main-nav">
+        <!-- LOGO -->
+        <img
+          src="https://davidccook.org/wp-content/uploads/2017/11/amazon-logo-transparent.png"
+          alt="Microsoft"
+          class="logo"
+        />
+        <!-- MAIN MENU -->
+        <ul class="main-menu show">
+          <li><a href="#">Computers</a></li>
+          <li><a href="#">Tablets</a></li>
+          <li><a href="#">Phones</a></li>
+          <li><a href="#">Music</a></li>
+          <li><a href="#">Games</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+        <!-- RIGHT MENU -->
+        <ul class="right-menu">
+          <li>
+            <a href="#">
+              <i class="fas fa-search"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- SHOWCASE -->
+      <!--
+          <header class="showcase">
+        <h2>Apple Deals</h2>
+
+        <p>Select Surfaces are on sale now - save while supplies last</p>
+
+        <a href="#" class="btn">
+          Shop Now <i class="fas fa-chevron-right"></i>
+        </a>
+      </header>
+
+      -->
+
+      <!-- CARDS SECTION 1 -->
+      <div class="product-container">
+        <!-- Left Column / Headphones Image -->
+        <div class="left-column">
+          <img
+            data-image="black"
+            src="https://i.pinimg.com/originals/b2/8f/ac/b28fac5ccd94bf3300cda137d8bcb29d.jpg"
+            alt=""
+          />
+          <img
+            data-image="blue"
+            src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mbp16touch-space-select-201911_GEO_SG?wid=1808&hei=1686&fmt=jpeg&qlt=80&.v=1573242761891"
+            alt=""
+          />
+          <img
+            data-image="red"
+            class="active"
+            src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mbp16touch-silver-select-201911_GEO_SG?wid=1808&hei=1686&fmt=jpeg&qlt=80&.v=1573242751123"
+            alt=""
+          />
+        </div>
+
+        <!-- Right Column -->
+        <div class="right-column">
+          <!-- Product Description -->
+          <div class="product-description">
+            <span>Computers</span>
+            <h1>Macbook Pro</h1>
+            <p>
+              The new MacBook Pro features a stunning 16-inch Retina display —
+              the largest Retina display ever in a Mac notebook. It produces 500
+              nits of brightness for spectacular highlights and bright whites,
+              while delivering deep blacks thanks to the precise photo alignment
+              of liquid crystal molecules. And the P3 wide colour gamut enables
+              brilliant, true-to-life images and videos. So no matter where you
+              are, you’ll see your work in the best possible light.
+            </p>
+          </div>
+
+          <!-- Product Configuration -->
+          <div class="product-configuration">
+            <!-- Product Color -->
+            <div class="product-color">
+              <span>Color</span>
+
+              <div class="color-choose">
+                <div>
+                  <input
+                    data-image="red"
+                    type="radio"
+                    id="red"
+                    name="color"
+                    value="red"
+                    checked
+                  />
+                  <label for="red"><span></span></label>
+                </div>
+                <div>
+                  <input
+                    data-image="blue"
+                    type="radio"
+                    id="blue"
+                    name="color"
+                    value="blue"
+                  />
+                  <label for="blue"><span></span></label>
+                </div>
+                <div>
+                  <input
+                    data-image="black"
+                    type="radio"
+                    id="black"
+                    name="color"
+                    value="black"
+                  />
+                  <label for="black"><span></span></label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cable Configuration -->
+            <div class="cable-config">
+              <span>Storage configuration</span>
+
+              <div class="cable-choose">
+                <button>512 GB</button>
+                <button>1 TB</button>
+                <button>2 TB</button>
+              </div>
+
+              <a href="#">How to configurate your computer</a>
+            </div>
+          </div>
+
+          <!-- Product Pricing -->
+          <div class="product-price">
+            <span>3499$</span>
+            <a href="#" class="cart-btn">Add to cart</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARBON -->
+      <!--
+                <section class="carbon dark">
+        <div class="content">
+          <h2>Sale</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="#" class="btn">
+            Shop Now <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+      </section>
+      -->
+
+      <!-- SOCIAL -->
+      <section class="follow">
+        <p>Follow Us</p>
+        <a href="https://facebook.com">
+          <img src="../images/facebook.png" alt="facebook" />
+        </a>
+        <a href="https://twitter.com">
+          <img src="../images/twitter.png" alt="twitter" />
+        </a>
+        <a href="https://linkedin.com">
+          <img src="../images/linkedin.png" alt="linkedin" />
+        </a>
+      </section>
+    </div>
+    <!-- END CONTAINER DIV-->
+
+    <!-- LINKS -->
+    <section class="links">
+      <div class="links-inner"></div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div><i class="fas fa-globe fa-2x"></i> English (United States)</div>
+        <ul>
+          <li><a href="#">Sitemap</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Privacy & cookies</a></li>
+          <li><a href="#">Terms of use</a></li>
+          <li><a href="#">Trademarks</a></li>
+          <li><a href="#">Safety & eco</a></li>
+          <li><a href="#">About our ads</a></li>
+          <li><a href="#">&copy; ecommerce 2020</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <!--<script src="../script/script.js"></script>-->
+    <script src="../script/productpage.js"></script>
+  </body>
+</html>

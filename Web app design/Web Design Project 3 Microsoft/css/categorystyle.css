@@ -109,7 +109,7 @@ ul {
 .showcase {
   width: 100%; /* 100% of the container */
   height: 400px;
-  background-image: url("https://9to5mac.com/wp-content/uploads/sites/6/2020/04/2020-imac-concept-will-you-buy-23-inch-imac.jpg?quality=82&strip=all");
+  background-image: url("https://www.advancedsciencenews.com/wp-content/uploads/2019/10/kyle-sung-oQuP_XBjOMY-unsplash.jpg");
   background-repeat: no-repeat;
   background-position: center; /* If you only specify one keyword, the other value will be "center" */
   background-size: cover; /* 	Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges */
@@ -125,6 +125,7 @@ ul {
 .showcase h2,
 .showcase p {
   margin-bottom: 0px;
+  color: white;
 }
 
 .showcase .btn {
@@ -143,7 +144,7 @@ ul {
 .home-cards img {
   width: 100%; /* prevent from them going outside of container */
   margin-bottom: 20px;
-  height: 150px;
+  min-height: 90px;
 }
 
 .home-cards h3 {
@@ -167,7 +168,7 @@ ul {
 .xbox {
   height: 350px;
   width: 100%;
-  background-image: url("https://www.nintendo.com/content/dam/noa/en_US/images/switch/system/system-hero-01.jpg");
+  background-image: url("https://i.dell.com/sites/csimages/UberHomePage_Imagery/all/notebook-xps-13-9300-3800x1480-my-diffimages-v3.jpg");
   background-repeat: no-repeat;
   background-position: center; /* If you only specify one keyword, the other value will be "center" */
   background-size: cover; /* 	Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges */
@@ -180,8 +181,10 @@ ul {
 }
 
 .xbox p,
+.xbox h2,
 .carbon p {
   margin: 10px 0 20px;
+  color: white;
 }
 
 /* ----------- CARBON SECTION ------------ */
