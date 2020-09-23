@@ -2,6 +2,7 @@ function javalistener(event) {
   // Get the target node of the event
 
   var javaqty = event.currentTarget;
+  console.log("javaqty : ", javaqty);
   var javavalue = javaqty.value;
   var javaprice = 2.0;
   document.getElementById("javasum").value = javavalue * javaprice;

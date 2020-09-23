@@ -2,14 +2,17 @@ function checkname(event) {
   // Get the target node of the event
 
   var myName = event.currentTarget;
-
+  var mynameid = event.currentTarget.type;
+  console.log("type of myname",mynameid);
   // Test the format of the input name
   //  Allow the spaces after the commas to be optional
-  //  Allow the period after the initial to be optional
+  console.log(myName);
+  console.log(myName.value);
 
-  var pos = myName.value.search(/([a-z]+\s*)/gi);
+  var regexp = /([a-z]+\s*)/i;
+  console.log(regexp.test(myName.value));
 
-  if (pos != 0) {
+  if (regexp.test(myName.value) === false) {
     alert(
       "The name you entered (" +
         myName.value +
