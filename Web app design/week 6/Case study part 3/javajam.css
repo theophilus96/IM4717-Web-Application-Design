@@ -1,0 +1,197 @@
+body {
+  background-image: url(./images/background2.gif);
+  color: #221811;
+  font-family: Verdana, Arial, sans-serif;
+}
+/*freepik.com*/
+header {
+  background-color: #d2b48c;
+  text-align: center;
+}
+/*
+JavaJam coffee house logo
+http://www.blueeyedrabbit.com/
+*/
+h1 {
+  font-size: 200%;
+  color: #382a05;
+}
+
+footer {
+  background-color: #d2b48c;
+  font-size: 1em;
+  font-family: italic;
+  text-align: center;
+  padding: 10px;
+  clear: right;
+  color: #1f1804;
+  font-size: small;
+}
+footer a {
+  color: #382a05;
+}
+#leftcolumn {
+  float: left;
+  width: 115px;
+  text-align: center;
+}
+
+#rightcolumn {
+  margin-left: 155px;
+  background-color: #fcebb6;
+  color: #382a05;
+  font-family: Verdana, Arial, sans-serif;
+  overflow: auto;
+  padding-bottom: 20px;
+}
+/*index page*/
+#rightcontent {
+  padding-left: 5%;
+  padding-right: 5%;
+  min-width: 650px;
+}
+
+title {
+  color: #382a05;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-top: 20px;
+}
+nav a {
+  text-decoration: none;
+  font-family: arial, sans-serif;
+  font-weight: bold;
+  color: #705310;
+  font-size: 1.2em;
+}
+a:visited {
+  color: #ccaa66;
+}
+
+#wrapper {
+  background-color: #efdaae;
+  width: 80%;
+  min-width: 800px;
+  box-shadow: 2px 2px 2px;
+  overflow: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content {
+  padding: 10px 20px 0 20px;
+}
+
+.content ul {
+  margin-left: 0;
+  padding-left: 20px;
+  list-style-image: url(./images/Webp.net-resizeimage.png); /*image inside the bullets for list*/
+  list-style-position: inside; /* align it with the the bottom parargraph*/
+
+  /*
+ brown button icon
+ https://commons.wikimedia.org/wiki/File:Button_Icon_Brown.svg
+ */
+}
+
+p {
+  margin: 0px;
+}
+
+#heroroad {
+  border-bottom: 10px;
+  width: 390px;
+  height: 232.5px;
+  margin: 0px 30px 10px 0px;
+  float: left;
+  /*
+  heroroad picture
+  http://aporter.cs.edinboro.edu/
+  */
+}
+
+/*form section*/
+.jobform {
+  font-family: Arial, sans-serif;
+  width: 350px;
+  padding: 10px;
+}
+label {
+  float: left;
+  clear: left;
+  display: block;
+  width: 100px;
+  text-align: right;
+  padding-right: 10px;
+  margin-top: 10px;
+}
+input,
+textarea {
+  margin-top: 10px;
+  display: block;
+}
+#mySubmit {
+  margin-left: 0 px;
+}
+
+/*menu section*/
+table {
+  position: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.menuform {
+  /* font-family: Arial, sans-serif; */
+  /* width: 350px; */
+  /* padding: 10px; */
+}
+
+td,
+th {
+  padding: 10px;
+}
+
+tr:nth-of-type(odd) {
+  background-color: #d2b48c;
+}
+
+/* music section*/
+.music {
+  padding-left: 20%;
+  padding-right: 20%;
+  overflow: auto;
+}
+
+h4 {
+  background-color: #d2b48c;
+  font-size: 1.2em;
+  padding-bottom: 0px;
+  margin-bottom: 10px;
+  clear: left;
+}
+
+#melanie,
+#greg {
+  float: left;
+  height: 70px;
+  width: 70px;
+  margin: 0px 30px 30px 30px;
+}
+
+/*http://www.foolsofty.com/ for both melanie and greg*/
+
+audio {
+  margin: 20px 0px 0px 0px;
+}
+/* 
+Linkin Park - Numb (Fingerstyle Guitar)
+by AcousticTrench
+https://www.youtube.com/watch?v=k49gVD-2hio
+
+TRINE 2: Main Theme - Guitar cover (Celtic Guitar Music)
+by Guitars & Dragons
+https://www.youtube.com/watch?v=JUSARM5hxMM
+*/
