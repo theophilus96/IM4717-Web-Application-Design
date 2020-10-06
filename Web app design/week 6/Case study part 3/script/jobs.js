@@ -9,7 +9,7 @@ function checkname(event) {
   console.log(myName);
   console.log(myName.value);
 
-  var regexp = /([a-z]+\s*)/i;
+  var regexp = /(^[A-Za-z][A-Za-z\s]*$)/i;
   console.log(regexp.test(myName.value));
 
   if (regexp.test(myName.value) === false) {

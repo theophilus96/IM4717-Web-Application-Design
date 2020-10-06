@@ -130,7 +130,9 @@ label {
 input,
 textarea {
   margin-top: 10px;
-  display: block;
+  /*display: block;*/
+  display: inline-block;
+
 }
 #mySubmit {
   margin-left: 0 px;
