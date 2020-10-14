@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JavaJam Coffee House</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="javajam.css" />
+    <script type="text/javascript" src="./script/Menu.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <a href="index.html">
+          <img src="./images/javalogo.gif" alt="javajam coffee house" />
+        </a>
+      </header>
+      <div id="leftcolumn">
+        <nav>
+          <b>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="music.html">Music</a></li>
+              <li><a href="jobs.html">Jobs</a></li>
+              <li><a href="productprice.html">Product Price Update</a></li>
+            </ul>
+          </b>
+        </nav>
+      </div>
+      <div id="rightcolumn">
+        <div class="content">
+          <h1>Coffee at JavaJam</h1>
+          <form action="" method="post" class="menuform">
+            <table border="0">
+              <tr>
+                <th><strong>Java</strong></th>
+                <td>
+                  Regular house blend, decaffeinated coffee, or flavor of the
+                  day.<br />
+                  Endless Cup $2.00
+                </td>
+                <td align="center">
+                  <input
+                    type="number"
+                    name="javaqty"
+                    id="javaqty"
+                    min="0"
+                    max="999"
+                    oninput="javalistener"
+                  />
+                  <!--<input type="text" name="javaqty" size="3" maxlength="3" /> size="3"
+                    maxlength="3"-->
+                </td>
+                <td align="center">
+                  <input
+                    type="text"
+                    name="javasum"
+                    id="javasum"
+                    size="3"
+                    maxlength="3"
+                    oninput="totallistener"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th><strong>Cafe au Lait</strong></th>
+                <td>
+                  House blended coffee infuse in to a smooth, steamed milk<br />
+                  Single $2.00
+                  <input
+                    type="radio"
+                    name="Caferadio"
+                    value="2.0"
+                    onclick="caferadio(2.0)"
+                    onchange="cafelistener"
+                  />
+                  Double $3.00
+                  <input
+                    type="radio"
+                    name="Caferadio"
+                    value="3.0"
+                    onclick="caferadio(3.0)"
+                    onchange="cafelistener"
+                  />
+                </td>
+                <td align="center">
+                  <input
+                    type="number"
+                    name="cafeqty"
+                    id="cafeqty"
+                    min="0"
+                    max="999"
+                    oninput="cafelistener"
+                  />
+                </td>
+                <td align="center">
+                  <input
+                    type="text"
+                    name="cafesum"
+                    id="cafesum"
+                    size="3"
+                    maxlength="3"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th><strong>Iced Cappucino</strong></th>
+                <td>
+                  Sweetened espresso blended with icy-cold milk and served in a
+                  chilled glass.<br />
+                  Single $4.75
+                  <input
+                    type="radio"
+                    name="Cappuradio"
+                    value="4.75"
+                    onclick="cappuradio(4.75)"
+                  />
+                  Double $5.75
+                  <input
+                    type="radio"
+                    name="Cappuradio"
+                    value="5.75"
+                    onclick="cappuradio(5.75)"
+                  />
+                </td>
+                <td align="center">
+                  <input
+                    type="number"
+                    name="cappuqty"
+                    id="cappuqty"
+                    min="0"
+                    max="999"
+                    oninput="cappulistener"
+                  />
+                </td>
+
+                <td align="center">
+                  <input
+                    type="text"
+                    name="cappusum"
+                    id="cappusum"
+                    size="4"
+                    maxlength="4"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th></th>
+                <td align="right"><strong>Total Price:</strong></td>
+                <td align="center" colspan="2">
+                  <input
+                    type="text"
+                    name="totalsum"
+                    id="totalsum"
+                    size="10"
+                    maxlength="10"
+                  />
+                </td>
+              </tr>
+            </table>
+          </form>
+          <script type="text/javascript" src="./script/Menu2.js"></script>
+        </div>
+      </div>
+      <footer>
+        <i>
+          Copyright &copy; 2014 JavaJam Coffee House <br />
+          <a href="mailto:theophilus@kwek.com"> theophilus@kwek.com </a>
+        </i>
+      </footer>
+    </div>
+  </body>
+</html>
