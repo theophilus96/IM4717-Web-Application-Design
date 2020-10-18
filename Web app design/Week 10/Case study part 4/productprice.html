@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JavaJam Coffee House</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="javajam.css" />
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <header>
+        <!--<h1>JavaJam Coffee House</h1>-->
+        <img src="./images/javalogo.gif" alt="javajam coffe house" />
+      </header>
+      <div id="leftcolumn">
+        <nav>
+          <b>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="music.html">Music</a></li>
+              <li><a href="jobs.html">Jobs</a></li>
+              <li><a href="productprice.html">Product Price Update</a></li>
+              <li><a href="salesreport.html">Sales Report</a></li>
+            </ul>
+          </b>
+        </nav>
+      </div>
+      <div id="rightcolumn">
+        <div class="content">
+          <h1>Coffee at JavaJam</h1>
+          <form action="php/productprice2.php" method="post" class="menuform">
+            <table border="0">
+              <tr>
+                <td bgcolor="#fcebb6">
+                  <button class="btn">update</button>
+                </td>
+                <th>
+                  <strong>Java</strong>
+                </th>
+                <td>
+                  Regular house blend, decaffeinated coffee, or flavor of the
+                  day.<br />
+                  Endless Cup $2.00 &nbsp;
+                  <input
+                    type="number"
+                    name="javaprice"
+                    id="javaprice"
+                    min="0"
+                    max="999"
+                    step="0.01"
+                    value=""
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button class="btn">update</button>
+                </td>
+
+                <th><strong>Cafe au Lait</strong></th>
+                <td>
+                  House blended coffee infuse in to a smooth, steamed milk<br />
+                  Single $2.00 &nbsp;
+                  <input
+                    type="number"
+                    name="cafesingleprice"
+                    id="cafesingleprice"
+                    min="0"
+                    max="999"
+                    step="0.01"
+                  />
+                  &nbsp; Double $3.00
+                  <input
+                    type="number"
+                    name="cafedoubleprice"
+                    id="cafedoubleprice"
+                    min="0"
+                    max="999"
+                    step="0.01"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="#fcebb6">
+                  <button class="btn">update</button>
+                </td>
+                <th><strong>Iced Cappucino</strong></th>
+                <td>
+                  Sweetened espresso blended with icy-cold milk and served in a
+                  chilled glass.<br />
+                  Single $4.75 &nbsp;
+                  <input
+                    type="number"
+                    name="capusingleprice"
+                    id="capusingleprice"
+                    min="0"
+                    max="999"
+                    step="0.01"
+                  />
+                  Double $5.75 &nbsp;
+                  <input
+                    type="number"
+                    name="capudoubleprice"
+                    id="capudoubleprice"
+                    min="0"
+                    max="999"
+                    step="0.01"
+                  />
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div>
+      </div>
+      <footer>
+        <i>
+          Copyright &copy; 2014 JavaJam Coffee House <br />
+          <a href="mailto:theophilus@kwek.com"> theophilus@kwek.com </a>
+        </i>
+      </footer>
+    </div>
+  </body>
+</html>

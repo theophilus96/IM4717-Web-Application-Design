@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JavaJam Coffee House</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="javajam.css" />
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <header>
+        <!--<h1>JavaJam Coffee House</h1>-->
+        <img src="./images/javalogo.gif" alt="javajam coffe house" />
+      </header>
+      <div id="leftcolumn">
+        <nav>
+          <b>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="music.html">Music</a></li>
+              <li><a href="jobs.html">Jobs</a></li>
+              <li><a href="productprice.html">Product Price Update</a></li>
+              <li><a href="salesreport.html">Sales Report</a></li>
+            </ul>
+          </b>
+        </nav>
+      </div>
+      <div id="rightcolumn">
+        <div class="content">
+          <h1>Coffee at JavaJam</h1>
+          <form action="./php/salesreport.php" method="post" class="menuform">
+            <table border="0">
+              <tr>
+                <td bgcolor="#fcebb6">
+                  <input type="checkbox" name="totalsales" value="" />
+                </td>
+                <th bgcolor="#fcebb6">
+                  <h2 align="left">Total dollar sales by products</h2>
+                </th>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="salesquantity" value="" /></td>
+                <th>
+                  <h2 align="left">Sales quantities by product category</h2>
+                </th>
+              </tr>
+              <tr>
+                <td>
+                  <input type="submit" value="Submit" />
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div>
+      </div>
+      <footer>
+        <i>
+          Copyright &copy; 2014 JavaJam Coffee House <br />
+          <a href="mailto:theophilus@kwek.com"> theophilus@kwek.com </a>
+        </i>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JavaJam Coffee House</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="javajam.css" />
+    <script type="text/javascript" src="./script/jobs.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <a href="index.html">
+          <img src="./images/javalogo.gif" alt="javajam coffee house" />
+        </a>
+      </header>
+      <div id="leftcolumn">
+        <nav>
+          <b>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="music.html">Music</a></li>
+              <li><a href="jobs.html">Jobs</a></li>
+              <li><a href="php/productprice2.php">Product Price Update</a></li>
+              <li><a href="salesreport.html">Sales Report</a></li>
+            </ul>
+          </b>
+        </nav>
+      </div>
+      <div id="rightcolumn">
+        <div class="content">
+          <div>
+            <h1>Jobs at JavaJam</h1>
+          </div>
+          <p>
+            Want to work at JavaJam? Fill out the form below to start your
+            application. Required fields are marked with an asterisk *
+          </p>
+
+          <div >
+            <form method="POST" action="show_post.php" class="jobform">
+              <label for="myName">*Name:</label>
+              <input type="text" name="myName" id="myName" required="yes" />
+              <label for="myEmail">*E-mail:</label>
+              <input type="text" name="myEmail" id="myEmail" required="yes" />
+              <label for="myDate">Start Date:</label>
+              <input type="date" name="myDate" id="myDateid" />
+              <label for="myComments">*Experience:</label>
+              <textarea
+                name="myComments"
+                id="myComments"
+                rows="2"
+                cols="20"
+                required="yes"
+              ></textarea>
+              <input id="mySubmit" type="submit" value="Apply now" />
+            </form>
+            <script type = "text/javascript"  src = "./script/jobs2.js" ></script> 
+          </div>
+        </div>
+      </div>
+      <footer>
+        <i>
+          Copyright &copy; 2014 JavaJam Coffee House <br />
+          <a href="mailto:theophilus@kwek.com"> theophilus@kwek.com </a>
+        </i>
+      </footer>
+    </div>
+  </body>
+</html>
