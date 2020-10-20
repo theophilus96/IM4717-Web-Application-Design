@@ -42,6 +42,22 @@ $query1 = "SELECT Javajam.MenuID, Javajam.Name, Javajam.item, SUM(Javajam_order_
 
 $result1 = mysqli_query($db, $query1);
 
+$query2 = "SELECT Javajam.item, SUM(Javajam_order_items.quantity) as total_quantity, SUM( Javajam.price * Javajam_order_items.quantity ) AS total_price\n"
+    . "FROM Javajam_order_items\n"
+    . "JOIN Javajam ON Javajam.MenuID = Javajam_order_items.MenuID\n"
+    . "GROUP BY Javajam.item\n"
+    . "ORDER BY SUM(Javajam_order_items.quantity) DESC LIMIT 0, 30";
+
+$result2 = mysqli_query($db, $query2);
+
+$query3 = "SELECT Javajam.item, SUM(Javajam_order_items.quantity) as total_quantity, SUM( Javajam.price * Javajam_order_items.quantity ) AS total_price\n"
+    . "FROM Javajam_order_items\n"
+    . "JOIN Javajam ON Javajam.MenuID = Javajam_order_items.MenuID\n"
+    . "GROUP BY Javajam.item\n"
+    . "ORDER BY SUM(Javajam.price * Javajam_order_items.quantity) DESC LIMIT 0, 30";
+
+$result3 = mysqli_query($db, $query3);
+
 /*
 if (mysqli_num_rows($result1) > 0) {
  // output data of each row
@@ -324,10 +340,43 @@ if (mysqli_num_rows($result) > 0) {
     }
    }
 
-if (mysqli_num_rows($result1) > 0) {
+   if (mysqli_num_rows($result2) > 0) {
     // output data of each row
     if (isset($_POST['salesquantity'])){
     echo "<h2>Sales quantities by product category</h2>";
+    echo "<table><tr><th>Category</th><th>Total Quantity</th><th>Total Sales</th></tr>";
+
+    while($row = mysqli_fetch_assoc($result2)) {
+    //echo "price: " . $row["price"]."<br>";
+    //echo "Name: " . $row["Name"]. " - Category: " . $row["item"]. " - Total Quantity: " . $row["total_quantity"]."<br>";
+    echo "<tr><td>".$row["item"]."</td><td>".$row["total_quantity"]."</td><td>".$row["total_price"]."</td></tr>";
+    }
+    echo "</table>";
+    }
+}
+
+
+if (mysqli_num_rows($result3) > 0) {
+    // output data of each row
+    if (isset($_POST['salesquantity'])){
+    echo "<h2>Highest dollar sales by product category</h2>";
+    echo "<table><tr><th>Category</th><th>Total Quantity</th><th>Total Sales</th></tr>";
+
+    while($row = mysqli_fetch_assoc($result3)) {
+    //echo "price: " . $row["price"]."<br>";
+    //echo "Name: " . $row["Name"]. " - Category: " . $row["item"]. " - Total Quantity: " . $row["total_quantity"]."<br>";
+    echo "<tr><td>".$row["item"]."</td><td>".$row["total_quantity"]."</td><td>".$row["total_price"]."</td></tr>";
+    }
+    echo "</table>";
+    }
+}
+   
+   
+
+if (mysqli_num_rows($result1) > 0) {
+    // output data of each row
+    if (isset($_POST['salesquantity'])){
+    echo "<h2>Sales quantities by full list</h2>";
     echo "<table><tr><th>Name</th><th>Category</th><th>Total Quantity</th><th>Total Sales</th></tr>";
 
     while($row = mysqli_fetch_assoc($result1)) {
