@@ -1,0 +1,28 @@
+html {
+  background-color: #cccccc;
+}
+
+body {
+  font-family: Verdana, calibri, arial;
+  background-color: #ffffff;
+  color: #000066;
+  width: 90%;
+  min-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px;
+  border-style: solid;
+  border-color: #0099cc;
+}
+
+header {
+  min-width: 850px;
+  min-height: 100px;
+  display: block;
+  background-color: #0099cc;
+
+  /*Just for checking the css */
+  border: 5px;
+  border-style: solid;
+  border-color: #000000;
+}
