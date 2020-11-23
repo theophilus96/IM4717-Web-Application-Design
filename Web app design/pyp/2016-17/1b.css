@@ -25,4 +25,68 @@ header {
   border: 5px;
   border-style: solid;
   border-color: #000000;
+  font-size: 200%;
+  font-weight: bold;
+}
+
+.left {
+  width: 300px;
+  float: left;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main {
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: 300px;
+  min-width: 700px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.main img {
+  min-width: 250px;
+  min-height: 180px;
+  float: right;
+  /*Just for checking the css */
+  border: 5px;
+  border-style: solid;
+  border-color: #000000;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+nav img {
+  min-width: 150px;
+  min-height: 40px;
+
+  /*Just for checking the css */
+  border: 5px;
+  border-style: solid;
+  border-color: #000000;
+}
+
+h1 {
+  font-size: 200%;
+  color: #66aaff;
+}
+
+footer {
+  background-color: #0099cc;
+  text-align: center;
+  padding: 10px;
+}
+
+fieldset {
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+#new {
+  float: right;
 }
