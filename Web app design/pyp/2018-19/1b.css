@@ -1,0 +1,155 @@
+body {
+  font-family: verdana, arial, sans-serif;
+  color: #8000ff;
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-color: #6600cc;
+  border-width: 3px;
+  width: 1000px;
+}
+
+header {
+  background-color: #6600cc;
+}
+
+header img {
+  width: 980px;
+  height: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* just to check for css */
+  min-width: 980px;
+  min-height: 30px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 3px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  display: inline;
+  text-decoration: none;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+#ad {
+  width: 980px;
+  height: 80px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* just to check for css */
+  min-width: 980px;
+  min-height: 80px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 3px;
+}
+
+.signup {
+  float: right;
+  padding-right: 40px;
+}
+
+.signup:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.left {
+  width: 320px;
+
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+  /* just to check css */
+
+  /* min-width: 320px; */
+
+  border-style: solid;
+  border-color: #000000;
+  border-width: 3px;
+}
+
+.left form {
+  /* margin-top: 50px; */
+  padding: 40px;
+
+  border-style: solid;
+  border-color: #000000;
+  border-width: 3px;
+}
+
+.left:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.main {
+  padding: 10px;
+  margin-left: 320px;
+  width: 650px;
+  min-width: 650px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 3px;
+}
+.main p {
+  background-color: #e6ccff;
+}
+
+.items {
+  display: inline-block;
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 200px;
+  min-width: 200px;
+  min-height: 200px;
+}
+
+.items img {
+  width: 200px;
+  height: 200px;
+
+  min-width: 200px;
+  min-height: 200px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 3px;
+}
+
+footer {
+  text-align: center;
+  font-size: small;
+  color: #ffffff;
+  background-color: #6600cc;
+}
+
+#wrapper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.itemset {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}

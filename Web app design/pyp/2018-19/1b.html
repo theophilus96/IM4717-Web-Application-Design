@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="1b.css" />
+  </head>
+  <body>
+    <header>
+      <img src="Ezcarrental.jpg" alt="Ezcarrental.jpg" />
+    </header>
+    <nav>
+      <ul>
+        <li>
+          <a href=""> Home </a>
+        </li>
+        <li>
+          <a href=""> Location Map </a>
+        </li>
+        <li>
+          <a href=""> FAQs </a>
+        </li>
+        <div class="signup">
+          <li><a href=""> Sign up &nbsp;|</a></li>
+          <li><a href=""> Login </a></li>
+        </div>
+      </ul>
+    </nav>
+    <div>
+      <img src="advertisement.gif" alt="advertisement.gif" id="ad" />
+    </div>
+
+    <div id="wrapper">
+      <div class="left">
+        <form action="car_search.php" method="get">
+          <label for="myDate">Pick up date</label>
+          <input type="date" name="myDate" id="myDateid" />
+          <br />
+          <label for="myDate">Return date</label>
+          <input type="date" name="myDate" id="myDateid" />
+          <br /><br />
+
+          <label for="Location">Location</label>
+          <br />
+          <select size="1" name="favbrowser">
+            <option>Any or north south east west</option>
+            <option value="Location1">Location1</option>
+            <option value="Location2">Location2</option>
+            <option value="Location3">Location3</option>
+          </select>
+          <br />
+          <br />
+
+          <label for="Car Type">Car Type</label>
+          <br />
+          <select size="1" name="CarType">
+            <option>Any or sedan sport MPV</option>
+            <option value="1">Car Type 1</option>
+            <option value="2">Car Type 2</option>
+            <option value="3">Car Type 3</option>
+          </select>
+
+          <br />
+          <br />
+          <label for="Car Type">Car Size</label>
+
+          <br />
+          <select size="1" name="CarSize ">
+            <option>Any or compact mid size luxury</option>
+            <option value="Car Size1">Car Size 1</option>
+            <option value="Car Size2">Car Size 2</option>
+            <option value="Car Size3">Car Size 3</option>
+          </select>
+
+          <br />
+          <br />
+          <input type="submit" value="SEARCH" />
+        </form>
+
+        <br />
+        <br />
+
+        <form action="car_search.php" method="get">
+          <label for="Location">Rating</label>
+          <br />
+          <select size="1" name="favbrowser">
+            <option>None or 1 star 2 star 3 star</option>
+            <option value="Location1">star</option>
+            <option value="Location2">star</option>
+            <option value="Location3">star</option>
+          </select>
+          <br />
+          <br />
+
+          <label for="Car Type">Price/Day</label>
+          <br />
+          <select size="1" name="CarType">
+            <option>None or &lt;100, 100-200 &gt;200</option>
+            <option value="1">Car Type 1</option>
+            <option value="2">Car Type 2</option>
+            <option value="3">Car Type 3</option>
+          </select>
+
+          <br />
+          <br />
+          <label for="Car Type">Car Brand</label>
+
+          <br />
+          <select size="1" name="CarSize ">
+            <option>None or Audi Honda Toyota</option>
+            <option value="Car Size1">Car Size 1</option>
+            <option value="Car Size2">Car Size 2</option>
+            <option value="Car Size3">Car Size 3</option>
+          </select>
+
+          <br />
+        </form>
+      </div>
+      <div class="main">
+        <div class="itemset">
+          <div class="items">
+            <img src="" alt="car" />
+            <p>View detail</p>
+          </div>
+          <div class="items">
+            <img src="" alt="car" />
+            <p>View detail</p>
+          </div>
+          <div class="items">
+            <img src="" alt="car" />
+            <p>View detail</p>
+          </div>
+        </div>
+
+        <br />
+        <br />
+
+        <div class="itemset">
+          <div class="items">
+            <img src="" alt="car" />
+            <p>View detail</p>
+          </div>
+          <div class="items">
+            <img src="" alt="car" />
+            <p>View detail</p>
+          </div>
+          <div class="items">
+            <img src="" alt="car" />
+            <p>View detail</p>
+          </div>
+        </div>
+      </div>
+      <footer>
+        copyright &copy; 2018 EZ car rentals pte ltd. All Rights Reserved
+      </footer>
+    </div>
+  </body>
+</html>
