@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sunny Lagoon resort</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="1b.css" />
+  </head>
+  <body>
+    <header>
+      <a href="1b.html">
+        <img src="Resort_banner.jpg" alt="Resort_banner.jpg" />
+      </a>
+    </header>
+    <nav>
+      <ul>
+        <li>
+          <a href=""></a>
+          Home
+        </li>
+        <li>
+          <a href=""></a>
+          Rooms and suites
+        </li>
+        <li>
+          <a href=""></a>
+          Resort facilities
+        </li>
+        <li>
+          <a href=""></a>
+          Resort facilities
+        </li>
+        <li>
+          <a href=""></a>
+          Resort Map
+        </li>
+        <li>
+          <a href=""></a>
+          FAQs
+        </li>
+        <div class="signup">
+          <li>
+            <a href=""></a>
+            Login &nbsp;|
+          </li>
+          <li>
+            <a href=""></a>
+            &nbsp;Sign up
+          </li>
+        </div>
+      </ul>
+    </nav>
+    <div class="promo">
+      <img src="Promotional_offers.GIF" alt="Promotional_offers.GIF" />
+    </div>
+    <div class="left">
+      <form action="room_search.php" method="get">
+        <div id="leftdate">
+          <label for="myDate">Check-in date</label><br />
+          <input type="date" name="leftdate" />
+        </div>
+        <div id="rightdate">
+          <label for="myDate">Check-out date</label>
+          <input type="date" name="rightdate" />
+        </div>
+        <br /><br />
+
+        <label for="Roomtype">Room type</label>
+        <br />
+        <select size="1" name="favbrowser">
+          <option>All or standard, superior, deluxe, suite</option>
+          <option value="superior">superior</option>
+          <option value="deluxe">deluxe</option>
+          <option value="suite">suite</option>
+        </select>
+        <br />
+        <br />
+
+        <label for="rooms">Number of rooms</label>
+        <br />
+        <select size="1" name="CarType">
+          <option>1</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+        <br />
+        <br />
+        <input type="submit" value="SEARCH" />
+        <input type="reset" value="reset" />
+      </form>
+
+      <br />
+      <br />
+
+      <form action="show_get.php" method="get">
+        <h3>Filter by ...</h3>
+        <label>Include breakfast ?</label>
+        <br />
+        <input type="radio" name="breakfast" value="All" checked /> All
+        <input type="radio" name="breakfast" value="yes" />
+        Yes
+        <input type="radio" name="breakfast" value="No" />
+        No
+
+        <br />
+        <br />
+        <label>Non-smoking room?</label>
+
+        <br />
+        <input type="radio" name="room" value="All" checked /> All
+        <input type="radio" name="room" value="yes" />
+        Yes
+        <input type="radio" name="room" value="No" />
+        No
+        <br />
+        <br />
+        <label>Pay later ?</label>
+
+        <br />
+        <input type="radio" name="Pay" value="All" checked /> All
+        <input type="radio" name="Pay" value="yes" />
+        Yes
+        <input type="radio" name="Pay" value="No" />
+        No
+      </form>
+    </div>
+    <div class="main">
+      <div class="top">
+        <div class="item">
+          <img src="" alt="" />
+          <div class="wording">
+            <p>Standard</p>
+            <p>From SG$90</p>
+            <a href="">View more</a>
+          </div>
+        </div>
+        <div class="item">
+          <img src="" alt="" />
+          <div class="wording">
+            <p>Standard</p>
+            <p>From SG$90</p>
+            <a href="">View more</a>
+          </div>
+        </div>
+        <div class="item">
+          <img src="" alt="" />
+          <div class="wording">
+            <p>Standard</p>
+            <p>From SG$90</p>
+            <a href="">View more</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <div class="item">
+          <img src="" alt="" />
+          <div class="wording">
+            <p>Standard</p>
+            <p>From SG$90</p>
+            <a href="">View more</a>
+          </div>
+        </div>
+        <div class="item">
+          <img src="" alt="" />
+          <div class="wording">
+            <p>Standard</p>
+            <p>From SG$90</p>
+            <a href="">View more</a>
+          </div>
+        </div>
+        <div class="item">
+          <img src="" alt="" />
+          <div class="wording">
+            <p>Standard</p>
+            <p>From SG$90</p>
+            <a href="">View more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      copyright &copy;2019 Sunny Lagoon Resort Pte Ltd. All Rights Reserved
+    </footer>
+  </body>
+</html>

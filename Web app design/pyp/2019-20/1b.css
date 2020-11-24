@@ -1,0 +1,167 @@
+body {
+  width: 1000px;
+  border-color: #003366;
+  border-width: 5px;
+  border-style: solid;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: verdana, sans-serif;
+  background-color: #ffffff;
+  color: #0033ff;
+}
+
+header {
+  background-color: #003366;
+}
+
+header img {
+  width: 980px;
+  height: 30px;
+
+  /* just to check the css */
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 980px;
+  min-height: 30px;
+  border-color: #000000;
+  border-width: 5px;
+  border-style: solid;
+}
+
+nav li {
+  display: inline;
+  text-decoration: none;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.signup {
+  float: right;
+  padding-right: 40px;
+}
+
+.signup:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.promo img {
+  width: 980px;
+  height: 60px;
+
+  /* just to check the css */
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 980px;
+  min-height: 60px;
+  border-color: #000000;
+  border-width: 5px;
+  border-style: solid;
+}
+
+.left {
+  margin-top: 20px;
+  width: 330px;
+  float: left;
+
+  margin-left: auto;
+  margin-right: auto;
+  /* just to check the css */
+}
+
+.left:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+#leftdate {
+  float: left;
+}
+#leftdate:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+#leftdate input {
+  width: 140px;
+}
+#rightdate input {
+  width: 140px;
+}
+
+form {
+  border-color: #000000;
+  border-width: 5px;
+  border-style: solid;
+  padding: 10px;
+}
+
+.main {
+  margin-top: 20px;
+  margin-left: 340px;
+  width: 640px;
+  /* just to check the css */
+  border-color: #000000;
+  border-width: 5px;
+  border-style: solid;
+}
+
+.item img {
+  width: 200px;
+  height: 160px;
+
+  /* just to check the css */
+  min-width: 200px;
+  min-height: 160px;
+  border-color: #000000;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.item {
+  width: 200px;
+  height: 60px;
+  margin-left: 5px;
+  margin-top: 5px;
+
+  text-align: center;
+  /* just to check the css */
+  min-width: 200px;
+  min-height: 160px;
+  display: inline-block;
+  border-color: #000000;
+  border-width: 1px;
+  border-style: solid;
+}
+.wording {
+  background-color: #99ccff;
+}
+
+.top {
+  margin: auto !important;
+}
+
+footer {
+  text-align: center;
+  font-size: small;
+  background-color: #003366;
+  color: #ffffff;
+}

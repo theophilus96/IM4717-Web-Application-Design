@@ -8,14 +8,16 @@
 
 //part ii
 $sql = "SELECT Car.CarID, Car.brand FROM Car \n"
-    ."JOIN Booking.CarID = Car.CarID \n"
-    ."WHERE Booking.return_date < '$pickupDate' ";
+    ."JOIN Booking ON Booking.CarID = Car.CarID \n"
+    ."GROUP BY Car.CarID\n"
+    ."WHERE Booking.return_date < '$pickupDate' OR Booking.return_date is NULL";
     
     //The where clause works on row’s data, not on aggregated data.
 
 $sql = "SELECT Car.CarID, Car.brand FROM Car \n"
-    ."JOIN Booking.CarID = Car.CarID \n"
-    ."Having MAX(Booking.return_date) < '$pickupDate' ";
+    ."JOIN Booking ON Booking.CarID = Car.CarID \n"
+    ."GROUP BY Car.CarID\n"
+    ."Having MAX(Booking.return_date) < '$pickupDate' OR Booking.return_date is NULL";
     //This answer is more correct
     //The having clause works on aggregated data.
 
@@ -34,9 +36,10 @@ $sql = "SELECT Car.CarID, Car.brand FROM Car \n"
     }
 //part iii
 $sql = "SELECT Car.CarID, Car.brand FROM Car \n"
-    ."JOIN Booking.CarID = Car.CarID \n"
-    ."JOIN CarProfile.CarProfileID = Car.CarProfileID \n"
-    ."HAVING  MAX(Booking.return_date) < '$pickupDate' \n"
+    ."JOIN Booking ON Booking.CarID = Car.CarID \n"
+    ."JOIN CarProfile ON CarProfile.CarProfileID = Car.CarProfileID \n"
+    ."GROUP BY Car.CarID\n"
+    ."HAVING  MAX(Booking.return_date) < '$pickupDate' OR Booking.return_date is NULL\n"
     ."AND CarProfile.type ='Sedan'"
     ."AND CarProfile.size ='Mid-Size'";
 
@@ -57,8 +60,11 @@ $sql = "SELECT Car.CarID, Car.brand FROM Car \n"
 //part iv
 $sql = "SELECT Car.CarID, Car.brand FROM Car \n"
     ."JOIN Booking.CarID = Car.CarID \n"
-    ."HAVING MAX(Booking.return_date) < '$pickupDate' \n"
-    ."AND Car.rate ='$rate'";
+    ."HAVING MAX(Booking.return_date) < '$pickupDate' OR Booking.return_date is NULL\n"
+    ."GROUP BY Car.CarID\n"
+    ."AND Car.rate ='$rate'\n"
+    ."AND CarProfile.type ='Sedan'\n"//added in from the previous part
+    ."AND CarProfile.size ='Mid-Size'";
 
 
     $result=$dbcnx->query($sql);

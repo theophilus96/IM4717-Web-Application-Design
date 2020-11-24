@@ -1,7 +1,5 @@
 <?php
 include "dbconnect.php";
-
-include "dbconnect.php";
 session_start();
 if (!isset($_SESSION['cart'])){
 	$_SESSION['cart'] = array();
@@ -64,4 +62,16 @@ echo "          </li>\n";
 </html>
 <?php 
 //count the number of items in the cart session which is a super global variable.
+?>
+
+<?php
+//shorter answer
+session_start();
+if (isset($_SESSION['valid_user'])){
+  echo '<li style="float:right"><a href="cart.php"><img src="cart.PNG"></a></li>';
+  echo '<li style="float:right"><a href="signup.html">'.$_SESSION['valid_user'].'</a></li>';
+}
+else{
+  echo '<li style="float:right"><a href="signup.html">Sign Up</a></li>';
+}
 ?>
