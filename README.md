@@ -2,22 +2,22 @@
  All my work for the this module
 
  ## Home
-![Home](../screenshots/192.168.56.2_f32ee_Web%20app%20design_Week%2010_Case%20study%20part%204_index.html.png)
+![Home](./index.png)
 
  ## Menu
- ![Menu](./screenshots/192.168.56.2_f32ee_Web%20app%20design_Week%2010_Case%20study%20part%204_menu.html.png)
+ ![Menu](./menu.png)
 
   ## Music
- ![Music](./screenshots/192.168.56.2_f32ee_Web%20app%20design_Week%2010_Case%20study%20part%204_music.html.png)
+ ![Music](./music.png)
 
   ## Jobs
- ![Jobs](./screenshots/192.168.56.2_f32ee_Web%20app%20design_Week%2010_Case%20study%20part%204_jobs.html.png)
+ ![Jobs](./jobs.png)
 
   ## Product price update
- ![Product price update](./screenshots/192.168.56.2_f32ee_Web%20app%20design_Week%2010_Case%20study%20part%204_php_productprice2.php.png)
+ ![Product price update](./productprice2.png)
 
   ## Sales Report Page
- ![Sales Report page](./screenshots/192.168.56.2_f32ee_Web%20app%20design_Week%2010_Case%20study%20part%204_salesreport.html.png)
+ ![Sales Report page](./salesreport2.png)
 
   ## Sales Report
- ![Sales Report](./screenshots/192.168.56.2_f32ee_Web%20app%20design_Week%2010_Case%20study%20part%204_php_salesreport.php.png)
+ ![Sales Report](./salesreport.png)
