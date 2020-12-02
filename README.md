@@ -2,7 +2,7 @@
  All my work for the this module
 
  ## Home
-![Home](screenshots/192.168.56.2_f32ee_Web%20app%20design_Week%2010_Case%20study%20part%204_index.html.png)
+![Home](../screenshots/192.168.56.2_f32ee_Web%20app%20design_Week%2010_Case%20study%20part%204_index.html.png)
 
  ## Menu
  ![Menu](./screenshots/192.168.56.2_f32ee_Web%20app%20design_Week%2010_Case%20study%20part%204_menu.html.png)
