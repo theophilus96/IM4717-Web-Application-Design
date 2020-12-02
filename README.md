@@ -2,22 +2,22 @@
  All my work for the this module
 
  ## Home
-![Home](./index.png)
+![Home](./screenshots/index.png)
 
  ## Menu
- ![Menu](./menu.png)
+ ![Menu](./screenshots/menu.png)
 
   ## Music
- ![Music](./music.png)
+ ![Music](./screenshots/music.png)
 
   ## Jobs
- ![Jobs](./jobs.png)
+ ![Jobs](./screenshots/jobs.png)
 
   ## Product price update
- ![Product price update](./productprice2.png)
+ ![Product price update](./screenshots/productprice2.png)
 
   ## Sales Report Page
- ![Sales Report page](./salesreport2.png)
+ ![Sales Report page](./screenshots/salesreport2.png)
 
   ## Sales Report
- ![Sales Report](./salesreport.png)
+ ![Sales Report](./screenshots/salesreport.png)
